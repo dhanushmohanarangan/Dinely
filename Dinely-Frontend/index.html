@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MealSync</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Dinely</h1>
+
+    <p>Every Meal Counts!</p>
+
+</header>
+
+<main>
+
+    <section class="dashboard">
+
+        <h2>Tomorrow's Meal Summary</h2>
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <h3>🍳 Breakfast</h3>
+
+                <p id="breakfast-count">0 Students</p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <h3>🍛 Lunch</h3>
+
+                <p id="lunch-count">0 Students</p>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <h3>🌙 Dinner</h3>
+
+                <p id="dinner-count">0 Students</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="meal-form">
+
+        <h2>Tomorrow's Meal Preference</h2>
+
+        <form id="meal-form">
+
+            <label for="student-name">
+
+                Student Name
+
+            </label>
+
+            <input
+                type="text"
+                id="student-name"
+                placeholder="Enter your name"
+            >
+
+            <p class="meal-title">
+
+                Select Your Meals
+
+            </p>
+
+            <div class="meal-buttons">
+
+                <button
+                    type="button"
+                    class="meal-button"
+                    id="breakfast-button"
+                >
+                    Breakfast
+                </button>
+
+                <button
+                    type="button"
+                    class="meal-button"
+                    id="lunch-button"
+                >
+                    Lunch
+                </button>
+
+                <button
+                    type="button"
+                    class="meal-button"
+                    id="dinner-button"
+                >
+                    Dinner
+                </button>
+
+            </div>
+
+            <p id="form-message"></p>
+
+            <button
+                type="submit"
+                id="submit-button"
+            >
+                Submit
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <section class="management">
+
+        <button
+            id="start-new-day"
+            type="button"
+        >
+            Start New Day
+        </button>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

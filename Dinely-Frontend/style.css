@@ -1,0 +1,260 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:"Poppins",sans-serif;
+    background-color:#dfdfdf;
+    color:black;
+}
+
+
+header{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:34px;
+}
+
+header p{
+    margin-top:10px;
+    margin-bottom:0;
+    font-size:14px;
+    color:#dfdfdf;
+}
+
+
+main{
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+
+.dashboard{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+}
+
+.dashboard h2{
+    margin-top:0;
+    margin-bottom:30px;
+    text-align:center;
+    font-size:28px;
+}
+
+.dashboard-cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.dashboard-card{
+    width:300px;
+    background:#dfdfdf;
+    border-radius:16px;
+    padding:25px;
+    text-align:center;
+}
+
+.dashboard-card h3{
+    margin:0 0 18px;
+    font-size:22px;
+}
+
+.dashboard-card p{
+    margin:0;
+    line-height:1.3;
+}
+
+.count{
+    font-size:42px;
+    font-weight:700;
+}
+
+.student-text{
+    font-size:16px;
+    font-weight:500;
+}
+
+
+.meal-form{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+}
+
+.meal-form h2{
+    margin-top:0;
+    margin-bottom:30px;
+    text-align:center;
+    font-size:28px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form label{
+    width:400px;
+    max-width:100%;
+    margin:0 auto 8px;
+    font-size:15px;
+    font-weight:500;
+}
+
+input[type="text"]{
+    width:400px;
+    max-width:100%;
+
+    margin:0 auto;
+
+    padding:14px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#dfdfdf;
+
+    font-family:"Poppins",sans-serif;
+    font-size:15px;
+}
+
+input[type="text"]:focus{
+    outline:2px solid black;
+}
+
+
+.meal-title{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.meal-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.meal-button{
+    width:160px;
+    padding:14px;
+
+    background:white;
+    color:black;
+
+    border:2px solid black;
+    border-radius:10px;
+
+    font-family:"Poppins",sans-serif;
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.meal-button.active{
+    background:black;
+    color:white;
+}
+
+
+#form-message{
+    margin-top:20px;
+    text-align:center;
+    font-size:14px;
+    font-weight:500;
+}
+
+
+#submit-button{
+    width:220px;
+
+    margin:30px auto 0;
+
+    padding:14px;
+
+    background:black;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    font-family:"Poppins",sans-serif;
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+#submit-button:hover{
+    opacity:0.8;
+}
+
+
+.management{
+    text-align:center;
+    margin-top:30px;
+}
+
+#start-new-day{
+    width:220px;
+
+    padding:14px;
+
+    background:black;
+    color:white;
+
+    border:none;
+    border-radius:10px;
+
+    font-family:"Poppins",sans-serif;
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+#start-new-day:hover{
+    opacity:0.8;
+}
+
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    .dashboard-card{
+        width:100%;
+    }
+
+    form label,
+    input[type="text"]{
+        width:100%;
+    }
+
+    .meal-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .meal-button{
+        width:220px;
+    }
+
+}

@@ -1,0 +1,13 @@
+package com.dhanush.dinely;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DinelyApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DinelyApplication.class, args);
+	}
+
+}
